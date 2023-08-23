@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__five-star-count {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
+    &__highlight {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0 0.3rem 0 0.3rem;
+    }
+  }
+}
+
+.overall {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &__title {
+    font-size: 1.4rem;
+    color: $dark-grey;
+  }
+
+  &__rating-phrase {
+    font-size: 1.6rem;
+  }
+
+  &__rating {
+    font-size: 6rem;
+    margin-top: -1.2rem;
+
+    &__out-of-five {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__stars {
+    font-size: 2.4rem;
+    margin: -0.3rem 0 0 0;
+  }
+
+  &__stars > * {
+    margin: 0 0.3rem 0.5rem 0;
+  }
+}

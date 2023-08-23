@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+$font: 'Rubik', sans-serif;
+$font-size: 1rem;
+$text-colour: #140400;
+
+$card-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+
+$primary-color: #b4e6ff;
+$secondary-color: #212529;
+$black: #140400;
+$white: #ffffff;
+$light-grey: #f8f9fa;
+$grey: #eeeeee;
+$dark-grey: #8f8f8f;
+$gold: #f0b625;
+
+$md-screen: 768px;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: $md-screen) {
+      @content;
+    }
+  }
+}
